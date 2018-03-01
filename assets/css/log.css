@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Reset */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		text-decoration: none;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+	}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+/* Box Model */
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	html {
+		 font-family: 'Poppins', sans-serif;
+	}
+	
+	 body {
+		height: 100%;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-attachment: fixed,			fixed,				fixed;
+	}
+
+	#wrapper {
+		width:500px;
+		border-radius: 10px;
+    	overflow: hidden;
+		margin: 6em auto;
+	}
+
+	section.main {
+		width: 100%;
+    	position: relative;
+		padding: 1.5em 3em 3em 3em ;
+	    border-radius: 10px;
+	    overflow: hidden;
+		}
+
+form {
+		margin: 0 0 1.5em 0;
+		width: 100%;
+	}
+	
+		input:focus::-webkit-input-placeholder { color:transparent; }
+		input:focus::-moz-placeholder { color:transparent; }
+		input:focus:-ms-input-placeholder { color:transparent; }
+
+		input::-webkit-input-placeholder { 
+			 font-family: 'Poppins', sans-serif;
+			 font-weight: 700;
+			 color:  #9152f8;
+		}
+		
+		input::-moz-placeholder { 
+			 font-family: 'Poppins', sans-serif;
+			 font-weight: 700;
+			 color:  #9152f8;
+		}
+		input:-ms-input-placeholder { 
+			 font-family: 'Poppins', sans-serif;
+			 font-weight: 700;
+			 color:  #9152f8;
+		}
+
+	
+	input{
+		outline: 0;
+		border:0;
+		padding: 0 1em;
+	    font-size: 16px;
+	    color: #f60;
+	    line-height: 1.2;
+	    display: block;
+	    width: 100%;
+	    height: 45px;
+	    background: transparent;
+	    padding: 0 5px 0 5px;
+	}
+
+
+	.t-c{
+		text-align: center;
+	}
+	header {
+		color:  #551a9a;
+	}
+	header,.log-1 {
+		padding: 20px 0;
+	}
+	header h2{
+		margin: 15px;
+	}
+	
+	button {
+    	outline: none !important;
+    	border: none;
+    	background: transparent;
+	}
+	.log{
+	    font-size: 30px;
+	    color: #9152f8;
+	    line-height: 1.2;
+	    display: block;
+	}
+
+	.container-btn {
+		width: 100%;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+
+	.log-btn {
+	    font-size: 18px;
+	    color: #555555;
+	    line-height: 1.2;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    padding: 0 20px;
+	    min-width: 120px;
+	    height: 50px;
+	    border-radius: 25px;
+	    background-color: white;
+	    cursor: pointer;
+	}
+	
+	.log-btn:hover {
+		background-color: #9152f8;
+		color: white;
+		transition: 0.4s ease-in-out;
+	}
+
+	.new{
+		padding-top: 50px;
+	} 
+
+	.new a {
+		font-size: 1.2em;
+		font-weight: 500;
+	}
+
+			
+	.data {
+	    width: 100%;
+	    position: relative;
+	    border-bottom: 2px solid rgba(255,255,255,0.24);
+	    margin-bottom: 30px;
+
+	}
+	.data:hover{
+		border-color: #551a9a;
+		transition:0.5s linear;
+	}
+	
+  	.new:hover a {
+  		color: white;
+  		transition: 0.5s ease-in-out;
+  	}
+	@media only screen and (max-width: 468px) {
+		#wrapper {
+			width:100%;
+		}
+	}
